@@ -3,6 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { Suspense } from "react";
 import { Environment, OrbitControls } from "@react-three/drei";
 import Model from "./Model";
+import { div } from 'three/tsl';
 // import './styles.css'
 
 
@@ -32,6 +33,7 @@ function Box(props) {
 function App()
 {
 return (
+  <div style={{width:"100vw",height:"100vh"}}>
   <Canvas>
     <ambientLight intensity={Math.PI / 2} />
     {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
@@ -44,6 +46,7 @@ return (
           <Environment preset="sunset" background />
     </Suspense>
   </Canvas>
+  </div>
 )
 }
 
