@@ -5,7 +5,7 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import Model from "./Model";
 import { div } from 'three/tsl';
 // import './styles.css'
-
+//newcommit
 
 function Box(props) {
   // This reference will give us direct access to the mesh
